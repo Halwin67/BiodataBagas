@@ -1,27 +1,20 @@
+/* Desain Dasar */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; background: #f4f9fb; }
+body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; background: #f4f7f6; }
 
 /* Navbar */
-.navbar { background: #2c3e50; color: white; padding: 1rem 0; }
-.nav-container { max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; padding: 0 20px; }
-.nav-menu { list-style: none; display: flex; gap: 20px; }
-.nav-menu a { color: white; text-decoration: none; }
+.navbar { background: #2c3e50; padding: 1rem 0; color: white; }
+.nav-container { max-width: 800px; margin: 0 auto; display: flex; justify-content: space-between; padding: 0 20px; }
+.nav-menu { list-style: none; display: flex; gap: 15px; }
+.nav-menu a { color: white; text-decoration: none; font-weight: bold; }
 
-/* Layout Utama */
-.container { max-width: 900px; margin: 20px auto; padding: 20px; }
+/* Konten */
+.container { max-width: 800px; margin: 20px auto; padding: 20px; background: white; border-radius: 10px; }
+.img-profil { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto 15px; }
+.hobby-item { display: flex; align-items: center; gap: 15px; margin-top: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+.img-hobby { width: 100px; height: 100px; object-fit: cover; border-radius: 5px; }
 
-/* Tentang Saya */
-.about-section { background: white; padding: 30px; border-radius: 8px; margin-bottom: 30px; text-align: center; }
-.photo-container img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; }
-.ig-link { display: block; color: #666; margin-top: 5px; }
-
-/* Hobi */
-.hobby-card { background: white; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-.hobby-img { width: 100%; border-radius: 5px; margin-bottom: 10px; }
-
-/* Responsive PC */
-@media (min-width: 768px) {
-    .about-section { display: flex; align-items: center; text-align: left; gap: 30px; }
-    .hobby-card { display: flex; align-items: center; }
-    .hobby-img { width: 200px; margin-right: 20px; margin-bottom: 0; }
+/* Responsive HP */
+@media (max-width: 600px) {
+    .hobby-item { flex-direction: column; text-align: center; }
 }
